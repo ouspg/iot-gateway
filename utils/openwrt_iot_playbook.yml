@@ -1,0 +1,40 @@
+# Python required in the openwrt for the modules to work.
+# ansible-galaxy install lefant.openwrt-uci
+- hosts: openwrt
+  vars:
+    dhcp_script_path: /bin/overseer/
+    dhcp_script_filename: dhcp_script.sh
+    dhcp_script_filepath: "{{ dhcp_script_path }}{{ dhcp_script_filename }}"
+  remote_user: root
+  tasks:
+  - name: Check that uci, luci, lua and dnsmasq are installed
+    opkg: name=uci,luci,luci-base,lua,dnsmasq state=present
+  - name: Set DHCP script to the device
+    copy: src={{ dhcp_script_filename }} dest={{ dhcp_script_path }}
+    register: dhcp_script_status
+  - name: Set the owner of the dhcp script to be user "nobody"
+    file: path={{ dhcp_script_filepath }} state=file owner=nobody mode=0744
+  - name: Add DHCP script setting to /etc/dnsmasq.conf
+    # uci would be the preferrable way to do this in openwrt, but
+    # apparently you cannot touch dnsmasq.conf with it, only dhcp
+    # configuration, which resides in a different file.
+    # OTOH Ansible role exists for dnsmasq, which could be used
+    # but it's hard to say if it plays well with uci. So, summa summarum
+    # lets just make sure the correct row is added there.
+    lineinfile: dest=/etc/dnsmasq.conf state=present regexp=^dhcp-script= line=dhcp-script={{ dhcp_script_filepath }}
+    register: dhcp_config_status
+  - name: Ensure an explaining comment is set to dnsmasq.conf file
+    lineinfile: dest=/etc/dnsmasq.conf state=present regexp="^# Automatically set by ansible script" insertbefore="^dhcp-script=" line="# Automatically set by ansible script"
+    register: command_added
+  - name: Add newline before comment, if needed
+    lineinfile: dest=/etc/dnsmasq.conf state=present insertbefore="^# Automatically set by ansible script" line=" "
+    when: command_added.changed
+ # - name: Reboot dnsmasq due to changes
+ #   command: /etc/init.d/dnsmasq reload
+ #   when: dhcp_script_status.changed or dhcp_config_status.changed
+  - name: Stop dnsmasq
+    command: /etc/init.d/dnsmasq stop
+  - name: Empty dhcp lease file
+    command: cp /dev/null /tmp/dhcp.leases
+  - name: Restart dnsmasq
+    command: /etc/init.d/dnsmasq reload

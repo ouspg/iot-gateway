@@ -1,0 +1,79 @@
+depth=1 C = US, O = Symantec Corporation, OU = Symantec Trust Network, CN = Symantec Class 3 EV SSL CA - G3
+verify error:num=20:unable to get local issuer certificate
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:/jurisdictionC=SE/businessCategory=Private Organization/serialNumber=5164060021/C=SE/postalCode=SE-167 14/ST=Stockholm/L=Bromma/street=Gustavslundsvagen 141/O=Nordnet Bank AB/CN=www.nordnet.fi
+   i:/C=US/O=Symantec Corporation/OU=Symantec Trust Network/CN=Symantec Class 3 EV SSL CA - G3
+ 1 s:/C=US/O=Symantec Corporation/OU=Symantec Trust Network/CN=Symantec Class 3 EV SSL CA - G3
+   i:/C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2006 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G5
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGzzCCBbegAwIBAgIQX8GmYgVAtzfaWxsSdDaEHTANBgkqhkiG9w0BAQsFADB3
+MQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAd
+BgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxKDAmBgNVBAMTH1N5bWFudGVj
+IENsYXNzIDMgRVYgU1NMIENBIC0gRzMwHhcNMTUwNTA2MDAwMDAwWhcNMTcwNzEz
+MjM1OTU5WjCB4jETMBEGCysGAQQBgjc8AgEDEwJTRTEdMBsGA1UEDxMUUHJpdmF0
+ZSBPcmdhbml6YXRpb24xEzARBgNVBAUTCjUxNjQwNjAwMjExCzAJBgNVBAYTAlNF
+MRIwEAYDVQQRDAlTRS0xNjcgMTQxEjAQBgNVBAgMCVN0b2NraG9sbTEPMA0GA1UE
+BwwGQnJvbW1hMR4wHAYDVQQJDBVHdXN0YXZzbHVuZHN2YWdlbiAxNDExGDAWBgNV
+BAoMD05vcmRuZXQgQmFuayBBQjEXMBUGA1UEAwwOd3d3Lm5vcmRuZXQuZmkwggEi
+MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCfsK5MfCFr9VHhymnlOrWDDcto
+bYR+7Fn6VB9rwotxwxkNfUedreatBrYuk8tTrUwlLYa2YDfgySTbSJXQ+aK8mYOG
+HDkyxuAeMY9z1+A1Q48OLmsVJdkmZYe5bsFXL3uDC2lBeCl4S0FWiJE3LKMmpssN
+N5R/vqzt3T1OYryKb5SAGKwCIKBJmrBbnLqfIbkLHBBWtnSu3hgSZAMo8XwK71d7
+773ZmENE8jdR08ATrMPhkmir2dS73qfy4RYSyqBeQk42wvVhR61B2wweVdiC0Z+u
+Ik7LPAH9Rzw1Csb8P2/FFgtOOKAU8N4QYI+/YrcKo9W8bTMnyImgK66FDwW7AgMB
+AAGjggLpMIIC5TAZBgNVHREEEjAQgg53d3cubm9yZG5ldC5maTAJBgNVHRMEAjAA
+MA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIw
+ZgYDVR0gBF8wXTBbBgtghkgBhvhFAQcXBjBMMCMGCCsGAQUFBwIBFhdodHRwczov
+L2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZGhdodHRwczovL2Quc3ltY2Iu
+Y29tL3JwYTAfBgNVHSMEGDAWgBQBWavn3ToLWaZkY9bPIAdX1ZHnajArBgNVHR8E
+JDAiMCCgHqAchhpodHRwOi8vc3Iuc3ltY2IuY29tL3NyLmNybDBXBggrBgEFBQcB
+AQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9zci5zeW1jZC5jb20wJgYIKwYBBQUH
+MAKGGmh0dHA6Ly9zci5zeW1jYi5jb20vc3IuY3J0MIIBfQYKKwYBBAHWeQIEAgSC
+AW0EggFpAWcAdwCkuQmQtBhYFIe7E6LMZ3AKPDWYBPkb37jjd80OyA3cEAAAAU0p
+njwiAAAEAwBIMEYCIQCijqWfc0Wik/SamPMum65vOmThmEOSrBu0W8W0NZH/lQIh
+APnDHgUc9J68DqKKKYcfA5eupejcdUOK+AHa5VDnZUGGAHUAVhQGmi/XwuzT9eG9
+RLI+x0Z2ubyZEVzA75SYVdaJ0N0AAAFNKZ49ZwAABAMARjBEAiBxWCanx5PXNcVa
+XctfY8o5mR0yaNhvtOgiv/wid01/pAIgEJ54xsOPwu8TNYrqfmy+lXiLJiitod+Y
+14hE4XItjxQAdQBo9pj4H2SCvjqM7rkoHUz8cVFdZ5PURNEKZ6y7T0/7xAAAAU0p
+njw5AAAEAwBGMEQCIHUhCz6JGsiRUy4ZZ6sciMpBZMpEXMHvzMp5RufOA6AeAiAE
+AjybIvvNhoRFrEiIYv1cWaAr/hsDrBNJdRJ48uT8XTANBgkqhkiG9w0BAQsFAAOC
+AQEAFFsAOmT2fSa+ws2iGufKr66I3DiVToUqSHIXPXtiILU+8UlcoYUqsFoObYG+
+B9kHwWHJw8AAMp0nAxGOjJnhcLssoxRcdRLMELaMTxryBrzp5MjimtcV9i/CNb1b
+/GuelBWkzAqIL9ft22UEslSCW2jprguB5ky001Dqcsn8Wm6uI14/gIhj5WXmDEgI
+E7Nu/HNIVnxCwEzLeOUWUOkK8uCjBtnzS5PxCWxguj55iLG4/nHAiAkPFsUSIZ5p
+X+fCT9a0bQm1l/qYRRCxh7RH0xIGmsUL8yX4fGscIRWjoGd0Mqf38Xu1K6u0RWH5
+SBvslW9MiZiXKkIrIgDhKL1ALw==
+-----END CERTIFICATE-----
+subject=/jurisdictionC=SE/businessCategory=Private Organization/serialNumber=5164060021/C=SE/postalCode=SE-167 14/ST=Stockholm/L=Bromma/street=Gustavslundsvagen 141/O=Nordnet Bank AB/CN=www.nordnet.fi
+issuer=/C=US/O=Symantec Corporation/OU=Symantec Trust Network/CN=Symantec Class 3 EV SSL CA - G3
+---
+No client certificate CA names sent
+Peer signing digest: SHA1
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 3582 bytes and written 410 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: D32D711CE60E3FBC88161F730F8713C08815B9F61B372DFE97EB4C1E6B72E154
+    Session-ID-ctx: 
+    Master-Key: 2D3240BC820CF12DF3B46F978C4492B3750D0E605C579D91EF74478C11AE81B2F67DA44D3E52AB2C0240A54324DCE870
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1446043665
+    Timeout   : 300 (sec)
+    Verify return code: 20 (unable to get local issuer certificate)
+---

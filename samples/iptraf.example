@@ -1,0 +1,34 @@
+Wed Oct 28 16:55:03 2015; ******** IP traffic monitor started ********
+Wed Oct 28 16:55:05 2015; TCP; eth0; 100 bytes; from 192.168.1.147:62406 to 192.168.1.121:22; first packet
+Wed Oct 28 16:55:05 2015; TCP; eth0; 100 bytes; from 192.168.1.121:22 to 192.168.1.147:62406; first packet
+Wed Oct 28 16:55:08 2015; UDP; eth0; 139 bytes; from 192.168.1.147:17500 to 255.255.255.255:17500
+Wed Oct 28 16:55:08 2015; UDP; eth0; 139 bytes; from 192.168.1.147:17500 to 192.168.1.255:17500
+Wed Oct 28 16:55:14 2015; TCP; eth0; 64 bytes; from 192.168.1.147:63703 to 192.168.1.121:22; first packet (SYN)
+Wed Oct 28 16:55:14 2015; TCP; eth0; 60 bytes; from 192.168.1.121:22 to 192.168.1.147:63703; first packet (SYN)
+Wed Oct 28 16:55:14 2015; UDP; eth0; 72 bytes; from 192.168.1.121:46391 to 192.168.1.1:53
+Wed Oct 28 16:55:14 2015; UDP; eth0; 105 bytes; from 192.168.1.1:53 to 192.168.1.121:46391
+Wed Oct 28 16:55:14 2015; UDP; eth0; 65 bytes; from 192.168.1.121:50255 to 192.168.1.1:53
+Wed Oct 28 16:55:14 2015; UDP; eth0; 81 bytes; from 192.168.1.1:53 to 192.168.1.121:50255
+Wed Oct 28 16:55:23 2015; UDP; eth0; 72 bytes; from 192.168.1.147:57621 to 192.168.1.255:57621
+Wed Oct 28 16:55:24 2015; UDP; eth0; 55 bytes; from 192.168.1.121:46463 to 192.168.1.1:53
+Wed Oct 28 16:55:24 2015; UDP; eth0; 55 bytes; from 192.168.1.121:46463 to 192.168.1.1:53
+Wed Oct 28 16:55:24 2015; UDP; eth0; 285 bytes; from 192.168.1.1:53 to 192.168.1.121:46463
+Wed Oct 28 16:55:25 2015; UDP; eth0; 110 bytes; from 192.168.1.1:53 to 192.168.1.121:46463
+Wed Oct 28 16:55:25 2015; TCP; eth0; 60 bytes; from 192.168.1.121:41802 to 176.34.182.132:80; first packet (SYN)
+Wed Oct 28 16:55:25 2015; TCP; eth0; 60 bytes; from 176.34.182.132:80 to 192.168.1.121:41802; first packet (SYN)
+Wed Oct 28 16:55:25 2015; UDP; eth0; 59 bytes; from 192.168.1.121:53366 to 192.168.1.1:53
+Wed Oct 28 16:55:25 2015; UDP; eth0; 59 bytes; from 192.168.1.121:53366 to 192.168.1.1:53
+Wed Oct 28 16:55:25 2015; UDP; eth0; 363 bytes; from 192.168.1.1:53 to 192.168.1.121:53366
+Wed Oct 28 16:55:25 2015; UDP; eth0; 212 bytes; from 192.168.1.1:53 to 192.168.1.121:53366
+Wed Oct 28 16:55:25 2015; TCP; eth0; 60 bytes; from 192.168.1.121:42022 to 46.51.183.94:80; first packet (SYN)
+Wed Oct 28 16:55:25 2015; TCP; eth0; 60 bytes; from 46.51.183.94:80 to 192.168.1.121:42022; first packet (SYN)
+Wed Oct 28 16:55:25 2015; TCP; eth0; 52 bytes; from 192.168.1.121:41802 to 176.34.182.132:80; FIN sent; 5 packets, 377 bytes, avg flow rate 3.00 kbits/s
+Wed Oct 28 16:55:25 2015; TCP; eth0; 52 bytes; from 176.34.182.132:80 to 192.168.1.121:41802; FIN acknowleged
+Wed Oct 28 16:55:25 2015; TCP; eth0; 52 bytes; from 176.34.182.132:80 to 192.168.1.121:41802; FIN sent; 4 packets, 655 bytes, avg flow rate 5.00 kbits/s
+Wed Oct 28 16:55:25 2015; TCP; eth0; 52 bytes; from 192.168.1.121:41802 to 176.34.182.132:80; FIN acknowleged
+Wed Oct 28 16:55:25 2015; TCP; eth0; 52 bytes; from 192.168.1.121:42022 to 46.51.183.94:80; FIN sent; 75 packets, 4201 bytes, avg flow rate 33.00 kbits/s
+Wed Oct 28 16:55:25 2015; TCP; eth0; 52 bytes; from 46.51.183.94:80 to 192.168.1.121:42022; FIN acknowleged
+Wed Oct 28 16:55:25 2015; TCP; eth0; 52 bytes; from 46.51.183.94:80 to 192.168.1.121:42022; FIN sent; 102 packets, 148048 bytes, avg flow rate 1184.00 kbits/s
+Wed Oct 28 16:55:25 2015; TCP; eth0; 52 bytes; from 192.168.1.121:42022 to 46.51.183.94:80; FIN acknowleged
+Wed Oct 28 16:55:38 2015; UDP; eth0; 139 bytes; from 192.168.1.147:17500 to 255.255.255.255:17500
+Wed Oct 28 16:55:38 2015; UDP; eth0; 139 bytes; from 192.168.1.147:17500 to 192.168.1.255:17500

@@ -1,0 +1,644 @@
+<%#
+ Copyright 2010 Jo-Philipp Wich <jow@openwrt.org>
+ Licensed to the public under the Apache License 2.0.
+-%>
+
+<%+header%>
+
+<style>
+
+.land {
+  fill: #999;
+  stroke-opacity: 1;
+}
+
+.graticule {
+  fill: none;
+  stroke: black;
+  stroke-width:.5;
+  opacity:.2;
+}
+
+.labels {
+    font: 8px sans-serif;
+    fill: black;
+    opacity: .5;
+
+    display:none;
+}
+
+.noclicks { pointer-events:none; }
+
+.point {  opacity:.6; }
+
+.homepoint {  opacity:.6; stroke:red; }
+
+.arcs {
+  opacity:.1;
+  stroke: gray;
+  stroke-width: 3;
+}
+.flyers {
+  stroke-width:1;
+  opacity: .6;
+  stroke: darkred; 
+}
+.arc, .flyer {
+  stroke-linejoin: round;
+  fill:none;
+}
+  .arc { }
+  .flyer { }
+  .flyer:hover { }
+
+</style>
+
+<script type="text/javascript" src="<%=resource%>/cbi.js"></script>
+<script src="<%=resource%>/d3.v3.min.js"></script>
+<script src="<%=resource%>/queue.v1.min.js"></script>
+<script src="<%=resource%>/topojson.v0.min.js"></script>
+
+<h2><a id="content" name="content">Visualised snapshot of network activity</a></h2>
+
+<div class="cbi-map-descr">This page visualises the network connections flowing through the router onto the globe</div>
+
+<fieldset class="cbi-section" id="cbi-table-table">
+	<!--<legend><%:Active Connections%></legend>-->
+
+	<div id="connection_map" style="width:100%; height:500px; border:1px solid #000000" />
+
+	<span id="loading" style="margin:0 auto; background-color: #3498DD; color: #FEFEFE; font: 20px 'Helvetica'; text-transform: uppercase;"> querying geoip database... </span>
+
+	<br />
+
+	<!--<div class="cbi-section-node">
+		<table class="cbi-section-table" id="connections">
+			<tr class="cbi-section-table-titles">
+				<th class="cbi-section-table-cell"><%:Network%></th>
+				<th class="cbi-section-table-cell"><%:Protocol%></th>
+				<th class="cbi-section-table-cell"><%:Source%></th>
+				<th class="cbi-section-table-cell"><%:Destination%></th>
+				<th class="cbi-section-table-cell"><%:Transfer%></th>
+			</tr>
+
+			<tr><td colspan="5"><em><%:Collecting data...%></em></td></tr>
+		</table>
+	</div>-->
+
+</fieldset>
+	<select id="host_select" onchange="filter_view()">
+	</select>
+<script>
+
+	d3.select(window)
+	    .on("mousemove", mousemove)
+	    .on("mouseup", mouseup);
+
+	var width = 960,
+	    height = 500;
+
+	var proj = d3.geo.orthographic()
+	    .translate([width / 2, height / 2])
+	    .clipAngle(90)
+	    .scale(220);
+
+	var sky = d3.geo.orthographic()
+	    .translate([width / 2, height / 2])
+	    .clipAngle(90)
+	    .scale(300);
+
+	var path = d3.geo.path().projection(proj).pointRadius(2);
+
+	var swoosh = d3.svg.line()
+	      .x(function(d) { return d[0] })
+	      .y(function(d) { return d[1] })
+	      .interpolate("cardinal")
+	      .tension(.0);
+
+	var links = [],
+	    arcLines = [],
+	    unique_points = [];
+
+	var svg = d3.selectAll("#connection_map").append("svg")
+	            .attr("width", width)
+	            .attr("height", height)
+	            .on("mousedown", mousedown);
+
+	var waiting_tagging, geoip_places;
+	var home_coordinates = [24.9375, 60.1708];
+
+	queue()
+	    .defer(d3.json, "/luci-static/resources/world-110m.json")
+	    .await(render_globe);
+
+	function render_globe(error, world) {
+		var ocean_fill = svg.append("defs").append("radialGradient")
+	        .attr("id", "ocean_fill")
+	        .attr("cx", "75%")
+	        .attr("cy", "25%");
+	      ocean_fill.append("stop").attr("offset", "5%").attr("stop-color", "#fff");
+	      ocean_fill.append("stop").attr("offset", "100%").attr("stop-color", "#ababab");
+
+	  var globe_highlight = svg.append("defs").append("radialGradient")
+	        .attr("id", "globe_highlight")
+	        .attr("cx", "75%")
+	        .attr("cy", "25%");
+	      globe_highlight.append("stop")
+	        .attr("offset", "5%").attr("stop-color", "#ffd")
+	        .attr("stop-opacity","0.6");
+	      globe_highlight.append("stop")
+	        .attr("offset", "100%").attr("stop-color", "#ba9")
+	        .attr("stop-opacity","0.2");
+
+	  var globe_shading = svg.append("defs").append("radialGradient")
+	        .attr("id", "globe_shading")
+	        .attr("cx", "55%")
+	        .attr("cy", "45%");
+	      globe_shading.append("stop")
+	        .attr("offset","30%").attr("stop-color", "#fff")
+	        .attr("stop-opacity","0")
+	      globe_shading.append("stop")
+	        .attr("offset","100%").attr("stop-color", "#505962")
+	        .attr("stop-opacity","0.3")
+
+	  var drop_shadow = svg.append("defs").append("radialGradient")
+	        .attr("id", "drop_shadow")
+	        .attr("cx", "50%")
+	        .attr("cy", "50%");
+	      drop_shadow.append("stop")
+	        .attr("offset","20%").attr("stop-color", "#000")
+	        .attr("stop-opacity",".5")
+	      drop_shadow.append("stop")
+	        .attr("offset","100%").attr("stop-color", "#000")
+	        .attr("stop-opacity","0")  
+
+	  svg.append("ellipse")
+	    .attr("cx", 440).attr("cy", 450)
+	    .attr("rx", proj.scale()*.90)
+	    .attr("ry", proj.scale()*.25)
+	    .attr("class", "noclicks")
+	    .style("fill", "url(#drop_shadow)");
+
+	  svg.append("circle")
+	    .attr("cx", width / 2).attr("cy", height / 2)
+	    .attr("r", proj.scale())
+	    .attr("class", "noclicks")
+	    .style("fill", "url(#ocean_fill)");
+	  
+	  svg.append("path")
+	    .datum(topojson.object(world, world.objects.land))
+	    .attr("class", "land noclicks")
+	    .attr("d", path);
+
+	  svg.append("circle")
+	    .attr("cx", width / 2).attr("cy", height / 2)
+	    .attr("r", proj.scale())
+	    .attr("class","noclicks")
+	    .style("fill", "url(#globe_highlight)");
+
+	  svg.append("circle")
+	    .attr("cx", width / 2).attr("cy", height / 2)
+	    .attr("r", proj.scale())
+	    .attr("class","noclicks")
+	    .style("fill", "url(#globe_shading)");
+	}
+
+
+    var rot_x = 0;
+    var rot_y = -20;
+    var do_rot = true;
+    var rotation_step_delta = 1000;
+
+    function rotateWorld() {
+      if(!do_rot) return;
+      rot_x -= 1;
+      rot_y += 0;
+      proj.rotate([rot_x, rot_y]);
+      sky.rotate([rot_x,rot_y]);
+      refresh();
+      setTimeout(rotateWorld, rotation_step_delta)
+    }
+
+    setTimeout(rotateWorld, rotation_step_delta);
+
+	queue()
+	    .defer(d3.json, "<%=build_url("admin/status/realtime/connection_geoip_cache_query")%>")
+	    .await(ready);
+
+	function ready(error, raw_data) {
+	  console.log("Cache query received");
+	  var conns = adapt_raw_geoip_data(raw_data, home_coordinates);
+	  geoip_places = conns.tagged_conns;
+	  waiting_tagging = conns.untagged_conns;
+
+	  update_host_select();
+
+	  svg.append("g").attr("class", "points")
+	  	  .selectAll("text").data([{ "type": "Feature", "geometry": { "type": "Point", "coordinates": home_coordinates }}])
+	  	.enter().append("path")
+	  	  .attr("class", "point homepoint")
+	  	  .attr("d", path);
+
+	  svg.append("g").attr("class","points")
+	      .selectAll("text").data(geoip_places.features)
+	    .enter().append("path")
+	      .attr("class", "point")
+	      .attr("d", path);
+
+	  // spawn links between cities as source/target coord pairs
+	  geoip_places.features.forEach(function(a) {
+	  	if(unique_points.indexOf(a.geometry.coordinates[0] + a.geometry.coordinates[1]) === -1) {
+	  		unique_points.push(a.geometry.coordinates[0] + a.geometry.coordinates[1]);
+	  		links.push({
+	          source: home_coordinates,			// for demo purposes
+	          target: a.geometry.coordinates
+	        });
+	  	}
+	  });
+
+	  // build geoJSON features from links array
+	  links.forEach(function(e,i,a) {
+	    var feature =   { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [e.source,e.target] }}
+	    arcLines.push(feature)
+	  });
+
+	  svg.append("g").attr("class","arcs")
+	    .selectAll("path").data(arcLines)
+	    .enter().append("path")
+	      .attr("class","arc")
+	      .attr("d",path)
+
+	  svg.append("g").attr("class","flyers")
+	    .selectAll("path").data(links)
+	    .enter().append("path")
+	    .attr("class","flyer")
+	    .attr("d", function(d) { return swoosh(flying_arc(d)) })
+
+	  refresh();
+	  console.log("Cache phase done.");
+	  run_query_for_untagged();
+	}
+
+	// waiting_tagging -> pop maximum of (let say) 100, get results, update map, see if reiteration is needed
+
+	function run_query_for_untagged() {
+		var db_query_url = "<%=build_url("admin/status/realtime/connection_geoip_db_query")%>";
+		var db_query_ips = [];
+		waiting_tagging.features.forEach(function(feature) {
+		  if (!feature.properties.src.startsWith("192.168.") && !feature.properties.src.startsWith("10.")) {
+		  	db_query_ips.push(feature.properties.src_int);
+		  } else if (!feature.properties.dst.startsWith("192.168.") && !feature.properties.dst.startsWith("10.")) {
+		  	db_query_ips.push(feature.properties.dst_int);
+		  }
+		});
+
+		db_query_ips.forEach(function(ip_addr) {
+			if(ip_addr) { // skip 0.0.0.0 and IPv6
+				db_query_url += "/" + ip_addr 
+			}
+		});
+
+		queue()
+		    .defer(d3.json, db_query_url)
+		    .await(add_points);
+	};
+
+	function add_points(error, raw_data) {
+	  console.log("Geoip query received");
+	  var new_points = update_geoip_tags(raw_data, waiting_tagging);
+	  var new_geoip_places = new_points.tagged_conns;
+
+	  svg.append("g").attr("class","points")
+	      .selectAll("text").data(new_geoip_places.features)
+	    .enter().append("path")
+	      .attr("class", "point")
+	      .attr("d", path);
+
+	  new_geoip_places.features.forEach(function(a) {
+	  	if(unique_points.indexOf(a.geometry.coordinates[0] + a.geometry.coordinates[1]) === -1) {
+	  		unique_points.push(a.geometry.coordinates[0] + a.geometry.coordinates[1]);
+	  		links.push({
+	          source: home_coordinates,			// for demo purposes
+	          target: a.geometry.coordinates
+	        });
+	  	}
+	  });
+
+	  // build geoJSON features from links array
+	  links.forEach(function(e,i,a) {
+	    var feature =   { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [e.source,e.target] }}
+	    arcLines.push(feature)
+	  });
+
+	  svg.append("g").attr("class","arcs")
+	    .selectAll("path").data(arcLines)
+	    .enter().append("path")
+	      .attr("class","arc")
+	      .attr("d",path)
+
+	  svg.append("g").attr("class","flyers")
+	    .selectAll("path").data(links)
+	    .enter().append("path")
+	    .attr("class","flyer")
+	    .attr("d", function(d) { return swoosh(flying_arc(d)) })
+
+	  refresh();
+
+	  geoip_places.features = geoip_places.features.concat(new_geoip_places.features);
+	  waiting_tagging = new_points.untagged_conns;
+	  update_host_select();
+	  console.log("GeoIP query phase done.");
+
+	  var loadingSpan = document.getElementById('loading');
+	  loadingSpan.style.display = "none";
+	  rotation_step_delta = 35;
+	}
+
+	function adapt_raw_geoip_data(raw_data, home_coordinates) {
+		var tagged_conns = {"type": "FeatureCollection", "features": []};		
+		var untagged_conns = {"type": "FeatureCollection", "features": []};
+
+		var conn;
+		var conns = raw_data[0];
+		while(conn = conns.pop()) {
+			var feature_object = {"type":"Feature", "properties": conn, "geometry":{"type":"Point"}}; // feature_object.geometry.coordinates = undefined
+			feature_object.properties.geotagged = false;
+			for(cache_entry of raw_data[1][0]) {
+				feature_object = inject_feature_coordinates(cache_entry, feature_object);
+				if(feature_object.properties.geotagged) {
+					break;
+				}
+			}
+
+			if(feature_object.properties.geotagged) {
+				tagged_conns.features.push(feature_object);
+			} else {
+				untagged_conns.features.push(feature_object);
+			}
+			if(!feature_object.properties.src) {
+				alert("Warning: feature object missing src.");
+			}
+		}
+
+		return {"tagged_conns": tagged_conns, "untagged_conns": untagged_conns};	
+	}
+
+	function inject_feature_coordinates(cache_entry, feature) {
+		if(cache_entry) {
+			if(cache_entry) {
+				if (!feature.properties.src.startsWith("192.168.") && !feature.properties.src.startsWith("10.")) {
+					if (cache_entry.network_start_integer < feature.properties.src_int && cache_entry.network_last_integer > feature.properties.src_int) {
+						feature.geometry.coordinates = [cache_entry.longitude, cache_entry.latitude];
+						feature.properties.geotagged = true;
+					} 
+						
+				} else if (!feature.properties.dst.startsWith("192.168.") && !feature.properties.dst.startsWith("10.")) {
+					if (cache_entry.network_start_integer < feature.properties.dst_int && cache_entry.network_last_integer > feature.properties.dst_int) {
+						feature.geometry.coordinates = [cache_entry.longitude, cache_entry.latitude];
+						feature.properties.geotagged = true;
+					}
+				}
+			} else {
+				console.log("Nothing inside cache entry.");
+			}
+		} else {
+			console.log("No cache entry.");
+		}
+		return feature;	
+	}
+
+	function filter_view() {
+		var selected = document.getElementById("host_select").value;
+
+		discard_connections();
+
+		if(selected == "All") {
+			append_to_map(geoip_places);
+		} else {
+			var filtered_places = {"type": "FeatureCollection", "features": []};
+			geoip_places.features.forEach(function(feature) {
+				if(feature.properties.src === selected || feature.properties.dst === selected) {
+					filtered_places.features.push(feature);
+				}
+			});
+			append_to_map(filtered_places);
+		}
+	}
+
+	function discard_connections() {
+		svg.selectAll(".flyer").remove();
+		svg.selectAll(".arcs").remove();
+		svg.selectAll(".flyers").remove();
+		svg.selectAll(".point").remove();
+		svg.selectAll(".arc").remove();
+	}
+
+	function append_to_map(updated_places) {
+	  unique_points = [];
+	  links = [];
+	  svg.append("g").attr("class", "points")
+	  	  .selectAll("text").data([{ "type": "Feature", "geometry": { "type": "Point", "coordinates": home_coordinates }}])
+	  	.enter().append("path")
+	  	  .attr("class", "point homepoint")
+	  	  .attr("d", path);
+
+	  svg.append("g").attr("class","points")
+	      .selectAll("text").data(updated_places.features)
+	    .enter().append("path")
+	      .attr("class", "point")
+	      .attr("d", path);
+
+	  updated_places.features.forEach(function(a) {
+	  	if(unique_points.indexOf(a.geometry.coordinates[0] + a.geometry.coordinates[1]) === -1) {
+	  		unique_points.push(a.geometry.coordinates[0] + a.geometry.coordinates[1]);
+	  		links.push({
+	          source: home_coordinates,			// for demo purposes
+	          target: a.geometry.coordinates
+	        });
+	  	}
+	  });
+
+	  // build geoJSON features from links array
+	  links.forEach(function(e,i,a) {
+	    var feature =   { "type": "Feature", "geometry": { "type": "LineString", "coordinates": [e.source,e.target] }}
+	    arcLines.push(feature)
+	  });
+
+	  svg.append("g").attr("class","arcs")
+	    .selectAll("path").data(arcLines)
+	    .enter().append("path")
+	      .attr("class","arc")
+	      .attr("d",path)
+
+	  svg.append("g").attr("class","flyers")
+	    .selectAll("path").data(links)
+	    .enter().append("path")
+	    .attr("class","flyer")
+	    .attr("d", function(d) { return swoosh(flying_arc(d)) })
+
+	  refresh();
+	}
+
+	function update_host_select() {
+		var hostlist = get_lan_hosts();
+		var host_select = document.getElementById("host_select");
+		
+		for (i = host_select.options.length-1; i>=0; i--) {
+  			host_select.remove(i);
+		}
+
+		var option = document.createElement("option");
+		option.text = "All";
+		host_select.add(option);
+
+		hostlist.forEach(function(host) {
+			option = document.createElement("option");
+			option.text = host;
+			host_select.add(option);
+		});
+		host_select.value = "All";
+	}
+
+	function get_lan_hosts() {
+		var hostlist = [];
+		geoip_places.features.forEach(function(feature) {
+			var hostcandidate = "";
+			if (feature.properties.src.startsWith("192.168.") || feature.properties.src.startsWith("10.")) {
+				hostcandidate = feature.properties.src;
+			} else if (feature.properties.dst.startsWith("192.168.") || feature.properties.dst.startsWith("10.")) {
+				hostcandidate = feature.properties.dst;
+			}
+			if(hostlist.indexOf(hostcandidate) === -1 && hostcandidate !== "") {
+				hostlist.push(hostcandidate);
+			}
+		});
+		return hostlist;
+	}
+
+	function update_geoip_tags(query_results, untagged_conns) {
+		var new_tagged_conns = {"type": "FeatureCollection", "features": []};		
+		var new_untagged_conns = {"type": "FeatureCollection", "features": []};
+
+		while(feature = untagged_conns.features.pop()) {
+			query_results.forEach(function(result_pool) {
+				if(!Array.isArray(result_pool)) {
+					return;
+				}
+				result_pool.forEach(function(cache_entry) {
+					if(cache_entry) {
+						if (!feature.properties.src.startsWith("192.168.") && !feature.properties.src.startsWith("10.")) {
+								if (cache_entry.network_start_integer < feature.properties.src_int && cache_entry.network_last_integer > feature.properties.src_int) {
+									feature.geometry.coordinates = [cache_entry.longitude, cache_entry.latitude];
+									feature.properties.geotagged = true;
+								}
+						} else if (!feature.properties.dst.startsWith("192.168.") && !feature.properties.dst.startsWith("10.")) {
+								if (cache_entry.network_start_integer < feature.properties.dst_int && cache_entry.network_last_integer > feature.properties.dst_int) {
+									feature.geometry.coordinates = [cache_entry.longitude, cache_entry.latitude];
+									feature.properties.geotagged = true;
+								}
+						} else {
+							//feature_object.properties = conn;
+							//feature_object.properties.geotagged = false;
+							//untagged_conns.features.push(feature_object);
+						}
+					}
+				});
+			});
+			if(feature.properties.geotagged) {
+				new_tagged_conns.features.push(feature);
+			} else if(!feature.properties.geotagged) {
+				new_untagged_conns.features.push(feature);
+			}
+		}
+		return {"tagged_conns": new_tagged_conns, "untagged_conns": new_untagged_conns}
+	}
+
+	function flying_arc(pts) {
+	  var source = pts.source,
+	      target = pts.target;
+
+	  var mid = location_along_arc(source, target, .5);
+	  var result = [ proj(source),
+	                 sky(mid),
+	                 proj(target) ]
+	  return result;
+	}
+
+
+
+	function refresh() {
+	  svg.selectAll(".land").attr("d", path);
+	  svg.selectAll(".point").attr("d", path);
+	  
+	  svg.selectAll(".arc").attr("d", path)
+	    .attr("opacity", function(d) {
+	        return fade_at_edge(d)
+	    })
+
+	  svg.selectAll(".flyer")
+	    .attr("d", function(d) { return swoosh(flying_arc(d)) })
+	    .attr("opacity", function(d) {
+	      return fade_at_edge(d)
+	    }) 
+	}
+
+	function fade_at_edge(d) {
+	  var centerPos = proj.invert([width/2,height/2]),
+	      arc = d3.geo.greatArc(),
+	      start, end;
+	  // function is called on 2 different data structures..
+	  if (d.source) {
+	    start = d.source, 
+	    end = d.target;  
+	  }
+	  else {
+	    start = d.geometry.coordinates[0];
+	    end = d.geometry.coordinates[1];
+	  }
+	  
+	  var start_dist = 1.57 - arc.distance({source: start, target: centerPos}),
+	      end_dist = 1.57 - arc.distance({source: end, target: centerPos});
+	    
+	  var fade = d3.scale.linear().domain([-.1,0]).range([0,.1]) 
+	  var dist = start_dist < end_dist ? start_dist : end_dist; 
+
+	  return fade(dist)
+	}
+
+	function location_along_arc(start, end, loc) {
+	  var interpolator = d3.geo.interpolate(start,end);
+	  return interpolator(loc)
+	}
+
+	// modified from http://bl.ocks.org/1392560
+	var m0, o0;
+	function mousedown() {
+	  do_rot = false;
+	  m0 = [d3.event.pageX, d3.event.pageY];
+	  o0 = proj.rotate();
+	  d3.event.preventDefault();
+	}
+	function mousemove() {
+	  if (m0) {
+	    var m1 = [d3.event.pageX, d3.event.pageY]
+	      , o1 = [o0[0] + (m1[0] - m0[0]) / 6, o0[1] + (m0[1] - m1[1]) / 6];
+	    o1[1] = o1[1] > 30  ? 30  :
+	            o1[1] < -30 ? -30 :
+	            o1[1];
+	    proj.rotate(o1);
+	    sky.rotate(o1);
+	    refresh();
+	  }
+	}
+	function mouseup() {
+	  if (m0) {
+	    mousemove();
+	    m0 = null;
+	  }
+	}
+</script>
+
+<br><br>
+This demo uses GeoLite2 data by MaxMind, available from http://www.maxmind.com.
+
+<%+footer%>

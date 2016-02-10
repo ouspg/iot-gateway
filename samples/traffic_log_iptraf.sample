@@ -1,0 +1,500 @@
+Wed Oct 28 12:21:05 2015; ******** IP traffic monitor started ********
+Wed Oct 28 12:21:06 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59618 to 192.30.252.87:443; first packet
+Wed Oct 28 12:21:06 2015; TCP; wlan0; 52 bytes; from 192.30.252.87:443 to 192.168.1.147:59618; first packet
+Wed Oct 28 12:21:06 2015; TCP; wlan0; 84 bytes; from 192.168.1.147:59763 to 130.231.63.1:22; first packet
+Wed Oct 28 12:21:06 2015; TCP; wlan0; 84 bytes; from 130.231.63.1:22 to 192.168.1.147:59763; first packet
+Wed Oct 28 12:21:06 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59897 to 193.111.104.10:443; first packet
+Wed Oct 28 12:21:06 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59617 to 192.30.252.87:443; first packet
+Wed Oct 28 12:21:06 2015; TCP; wlan0; 52 bytes; from 192.168.1.1:80 to 192.168.1.147:59734; first packet
+Wed Oct 28 12:21:06 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59734 to 192.168.1.1:80; first packet
+Wed Oct 28 12:21:06 2015; TCP; wlan0; 52 bytes; from 192.30.252.87:443 to 192.168.1.147:59617; first packet
+Wed Oct 28 12:21:06 2015; UDP; wlan0; 68 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:21:06 2015; UDP; wlan0; 47 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:21:06 2015; UDP; wlan0; 71 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:21:07 2015; TCP; wlan0; 460 bytes; from 178.213.233.22:22 to 192.168.1.147:59645; first packet
+Wed Oct 28 12:21:07 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59645 to 178.213.233.22:22; first packet
+Wed Oct 28 12:21:07 2015; UDP; wlan0; 253 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:21:07 2015; UDP; wlan0; 107 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:21:07 2015; UDP; wlan0; 66 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:21:07 2015; UDP; wlan0; 68 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:21:07 2015; TCP; wlan0; 54 bytes; from 184.173.90.195:80 to 192.168.1.147:59633; first packet
+Wed Oct 28 12:21:07 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59633 to 184.173.90.195:80; first packet
+Wed Oct 28 12:21:08 2015; TCP; wlan0; 569 bytes; from 192.168.1.147:59728 to 64.4.47.1:443; first packet
+Wed Oct 28 12:21:08 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59620 to 192.30.252.92:443; first packet
+Wed Oct 28 12:21:08 2015; TCP; wlan0; 153 bytes; from 64.4.47.1:443 to 192.168.1.147:59728; first packet
+Wed Oct 28 12:21:08 2015; TCP; wlan0; 52 bytes; from 192.30.252.92:443 to 192.168.1.147:59620; first packet
+Wed Oct 28 12:21:08 2015; UDP; wlan0; 72 bytes; from 192.168.1.147:57621 to 192.168.1.255:57621
+Wed Oct 28 12:21:09 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59773 to 31.13.81.9:443; first packet
+Wed Oct 28 12:21:09 2015; TCP; wlan0; 52 bytes; from 31.13.81.9:443 to 192.168.1.147:59773; first packet
+Wed Oct 28 12:21:10 2015; TCP; wlan0; 115 bytes; from 173.194.40.246:443 to 192.168.1.147:59864; first packet
+Wed Oct 28 12:21:10 2015; TCP; wlan0; 52 bytes; from 173.194.40.246:443 to 192.168.1.147:59864; FIN sent; 2 packets, 167 bytes, avg flow rate 1.00 kbits/s
+Wed Oct 28 12:21:10 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59864 to 173.194.40.246:443; first packet
+Wed Oct 28 12:21:10 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59864 to 173.194.40.246:443; FIN sent; 3 packets, 156 bytes, avg flow rate 1.00 kbits/s
+Wed Oct 28 12:21:10 2015; TCP; wlan0; 52 bytes; from 173.194.40.246:443 to 192.168.1.147:59864; FIN sent; 3 packets, 219 bytes, avg flow rate 1.00 kbits/s
+Wed Oct 28 12:21:10 2015; TCP; wlan0; 52 bytes; from 173.194.40.246:443 to 192.168.1.147:59864; FIN acknowleged
+Wed Oct 28 12:21:10 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59864 to 173.194.40.246:443; FIN acknowleged
+Wed Oct 28 12:21:10 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59864 to 173.194.40.246:443; FIN sent; 4 packets, 208 bytes, avg flow rate 1.00 kbits/s
+Wed Oct 28 12:21:10 2015; TCP; wlan0; 52 bytes; from 173.194.40.246:443 to 192.168.1.147:59864; FIN acknowleged
+Wed Oct 28 12:21:10 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59864 to 173.194.40.246:443; Connection reset; 1 packets, 40 bytes, avg flow rate 0.00 kbits/s; opposite direction 0 packets, 0 bytes; avg flow rate 0.00 kbits/s
+Wed Oct 28 12:21:11 2015; TCP; wlan0; 100 bytes; from 192.168.1.147:59735 to 158.85.224.179:443; first packet
+Wed Oct 28 12:21:11 2015; TCP; wlan0; 100 bytes; from 192.168.1.147:59792 to 192.168.1.1:22; first packet
+Wed Oct 28 12:21:11 2015; TCP; wlan0; 100 bytes; from 192.168.1.1:22 to 192.168.1.147:59792; first packet
+Wed Oct 28 12:21:11 2015; TCP; wlan0; 95 bytes; from 158.85.224.179:443 to 192.168.1.147:59735; first packet
+Wed Oct 28 12:21:13 2015; TCP; wlan0; 83 bytes; from 173.192.82.194:443 to 192.168.1.147:58878; first packet
+Wed Oct 28 12:21:13 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:58878 to 173.192.82.194:443; first packet
+Wed Oct 28 12:21:13 2015; TCP; wlan0; 54 bytes; from 173.192.82.194:80 to 192.168.1.147:58880; first packet
+Wed Oct 28 12:21:13 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:58880 to 173.192.82.194:80; first packet
+Wed Oct 28 12:21:14 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59897 to 193.111.104.10:443; FIN sent; 2 packets, 104 bytes, avg flow rate 0.00 kbits/s
+Wed Oct 28 12:21:14 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59898 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:21:14 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59897; first packet
+Wed Oct 28 12:21:14 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59898; first packet (SYN)
+Wed Oct 28 12:21:19 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59898; FIN sent; 9 packets, 1245 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:21:19 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59898 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:21:19 2015; TCP; wlan0; 83 bytes; from 192.30.252.87:443 to 192.168.1.147:59619; first packet
+Wed Oct 28 12:21:19 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59619 to 192.30.252.87:443; first packet
+Wed Oct 28 12:21:20 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59778 to 199.16.156.230:443; first packet
+Wed Oct 28 12:21:20 2015; TCP; wlan0; 52 bytes; from 199.16.156.230:443 to 192.168.1.147:59778; first packet
+Wed Oct 28 12:21:22 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59898 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 2.00 kbits/s
+Wed Oct 28 12:21:22 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59899 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:21:22 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59900 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:21:22 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59898; first packet
+Wed Oct 28 12:21:22 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59900; first packet (SYN)
+Wed Oct 28 12:21:22 2015; UDP; wlan0; 52 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:21:22 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59899; first packet (SYN)
+Wed Oct 28 12:21:22 2015; UDP; wlan0; 60 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:21:27 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59900; FIN sent; 8 packets, 1221 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:21:27 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59899; FIN sent; 9 packets, 1245 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:21:27 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59900 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:21:27 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59899 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:21:28 2015; UDP; wlan0; 469 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:21:28 2015; UDP; wlan0; 469 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:21:28 2015; UDP; wlan0; 71 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:21:29 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59878 to 68.232.35.185:443; first packet
+Wed Oct 28 12:21:29 2015; TCP; wlan0; 52 bytes; from 68.232.35.185:443 to 192.168.1.147:59878; first packet
+Wed Oct 28 12:21:32 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 255.255.255.255:17500
+Wed Oct 28 12:21:32 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 192.168.1.255:17500
+Wed Oct 28 12:21:33 2015; TCP; wlan0; 83 bytes; from 108.160.172.206:443 to 192.168.1.147:59871; first packet
+Wed Oct 28 12:21:33 2015; TCP; wlan0; 52 bytes; from 108.160.172.206:443 to 192.168.1.147:59871; FIN sent; 2 packets, 135 bytes, avg flow rate 1.00 kbits/s
+Wed Oct 28 12:21:33 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59871 to 108.160.172.206:443; first packet
+Wed Oct 28 12:21:33 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59871 to 108.160.172.206:443; FIN sent; 3 packets, 156 bytes, avg flow rate 1.00 kbits/s
+Wed Oct 28 12:21:33 2015; TCP; wlan0; 52 bytes; from 108.160.172.206:443 to 192.168.1.147:59871; FIN acknowleged
+Wed Oct 28 12:21:35 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59900 to 193.111.104.10:443; FIN sent; 10 packets, 2057 bytes, avg flow rate 1.23 kbits/s
+Wed Oct 28 12:21:35 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59899 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 1.23 kbits/s
+Wed Oct 28 12:21:35 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59901 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:21:35 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59900; FIN acknowleged
+Wed Oct 28 12:21:35 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59899; FIN acknowleged
+Wed Oct 28 12:21:35 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59901; first packet (SYN)
+Wed Oct 28 12:21:38 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59887 to 62.78.98.221:443; first packet
+Wed Oct 28 12:21:38 2015; TCP; wlan0; 52 bytes; from 62.78.98.221:443 to 192.168.1.147:59887; first packet
+Wed Oct 28 12:21:40 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59901; FIN sent; 9 packets, 1245 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:21:40 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59901 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:21:40 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59873 to 62.78.98.222:443; first packet
+Wed Oct 28 12:21:41 2015; TCP; wlan0; 52 bytes; from 62.78.98.222:443 to 192.168.1.147:59873; first packet
+Wed Oct 28 12:21:41 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59732 to 64.233.165.188:5228; first packet
+Wed Oct 28 12:21:41 2015; TCP; wlan0; 52 bytes; from 64.233.165.188:5228 to 192.168.1.147:59732; first packet
+Wed Oct 28 12:21:42 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59874 to 54.209.12.252:443; first packet
+Wed Oct 28 12:21:42 2015; TCP; wlan0; 71 bytes; from 66.6.45.23:443 to 192.168.1.147:59876; first packet
+Wed Oct 28 12:21:42 2015; TCP; wlan0; 40 bytes; from 66.6.45.23:443 to 192.168.1.147:59876; FIN sent; 2 packets, 111 bytes, avg flow rate 0.00 kbits/s
+Wed Oct 28 12:21:42 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59876 to 66.6.45.23:443; first packet
+Wed Oct 28 12:21:42 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59876 to 66.6.45.23:443; FIN sent; 3 packets, 120 bytes, avg flow rate 0.00 kbits/s
+Wed Oct 28 12:21:42 2015; TCP; wlan0; 40 bytes; from 66.6.45.23:443 to 192.168.1.147:59876; FIN acknowleged
+Wed Oct 28 12:21:42 2015; TCP; wlan0; 52 bytes; from 54.209.12.252:443 to 192.168.1.147:59874; first packet
+Wed Oct 28 12:21:43 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59901 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 2.00 kbits/s
+Wed Oct 28 12:21:43 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59902 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:21:43 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59901; FIN acknowleged
+Wed Oct 28 12:21:43 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59902; first packet (SYN)
+Wed Oct 28 12:21:43 2015; UDP; wlan0; 52 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:21:43 2015; UDP; wlan0; 60 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:21:44 2015; TCP; wlan0; 52 bytes; from 68.232.35.185:443 to 192.168.1.147:59878; FIN sent; 2 packets, 104 bytes, avg flow rate 0.00 kbits/s
+Wed Oct 28 12:21:44 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59878 to 68.232.35.185:443; FIN acknowleged
+Wed Oct 28 12:21:46 2015; TCP; wlan0; 63 bytes; from 193.182.7.228:443 to 192.168.1.147:59724; first packet
+Wed Oct 28 12:21:46 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59724 to 193.182.7.228:443; first packet
+Wed Oct 28 12:21:46 2015; UDP; wlan0; 72 bytes; from 192.168.1.147:57621 to 192.168.1.255:57621
+Wed Oct 28 12:21:48 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59902; FIN sent; 8 packets, 1193 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:21:48 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59902 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:21:48 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59771 to 62.78.98.226:443; first packet
+Wed Oct 28 12:21:48 2015; TCP; wlan0; 52 bytes; from 62.78.98.226:443 to 192.168.1.147:59771; first packet
+Wed Oct 28 12:21:49 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59878 to 68.232.35.185:443; FIN sent; 3 packets, 144 bytes, avg flow rate 0.05 kbits/s
+Wed Oct 28 12:21:49 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59902 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 2.67 kbits/s
+Wed Oct 28 12:21:49 2015; UDP; wlan0; 59 bytes; from 192.168.1.147:52769 to 8.8.8.8:53
+Wed Oct 28 12:21:49 2015; TCP; wlan0; 40 bytes; from 68.232.35.185:443 to 192.168.1.147:59878; Connection reset; 3 packets, 144 bytes, avg flow rate 0.05 kbits/s; opposite direction 3 packets, 144 bytes; avg flow rate 0.05 kbits/s
+Wed Oct 28 12:21:49 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59902; FIN acknowleged
+Wed Oct 28 12:21:49 2015; UDP; wlan0; 114 bytes; from 8.8.8.8:53 to 192.168.1.147:52769
+Wed Oct 28 12:21:49 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59903 to 104.244.43.7:443; first packet (SYN)
+Wed Oct 28 12:21:49 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59904 to 104.244.43.7:443; first packet (SYN)
+Wed Oct 28 12:21:49 2015; TCP; wlan0; 60 bytes; from 104.244.43.7:443 to 192.168.1.147:59904; first packet (SYN)
+Wed Oct 28 12:21:49 2015; TCP; wlan0; 60 bytes; from 104.244.43.7:443 to 192.168.1.147:59903; first packet (SYN)
+Wed Oct 28 12:21:51 2015; UDP; wlan0; 65 bytes; from 192.168.1.147:43013 to 8.8.8.8:53
+Wed Oct 28 12:21:51 2015; UDP; wlan0; 345 bytes; from 8.8.8.8:53 to 192.168.1.147:43013
+Wed Oct 28 12:21:51 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59905 to 62.78.98.231:443; first packet (SYN)
+Wed Oct 28 12:21:51 2015; TCP; wlan0; 60 bytes; from 62.78.98.231:443 to 192.168.1.147:59905; first packet (SYN)
+Wed Oct 28 12:21:51 2015; UDP; wlan0; 445 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:21:52 2015; UDP; wlan0; 445 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:21:52 2015; UDP; wlan0; 71 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:21:52 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59906 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:21:52 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59906; first packet (SYN)
+Wed Oct 28 12:21:55 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59907 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:21:55 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59907; first packet (SYN)
+Wed Oct 28 12:21:57 2015; TCP; wlan0; 52 bytes; from 104.244.43.7:443 to 192.168.1.147:59904; FIN sent; 15 packets, 12262 bytes, avg flow rate 12.25 kbits/s
+Wed Oct 28 12:21:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59904 to 104.244.43.7:443; FIN acknowleged
+Wed Oct 28 12:21:57 2015; TCP; wlan0; 52 bytes; from 104.244.43.7:443 to 192.168.1.147:59903; FIN sent; 11 packets, 6690 bytes, avg flow rate 6.63 kbits/s
+Wed Oct 28 12:21:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59903 to 104.244.43.7:443; FIN acknowleged
+Wed Oct 28 12:21:58 2015; TCP; wlan0; 377 bytes; from 108.160.167.34:443 to 192.168.1.147:59723; first packet
+Wed Oct 28 12:21:58 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59723 to 108.160.167.34:443; first packet
+Wed Oct 28 12:22:00 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59906; FIN sent; 13 packets, 2726 bytes, avg flow rate 2.63 kbits/s
+Wed Oct 28 12:22:00 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59906 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:22:02 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 255.255.255.255:17500
+Wed Oct 28 12:22:02 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 192.168.1.255:17500
+Wed Oct 28 12:22:03 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59904 to 104.244.43.7:443; FIN sent; 14 packets, 1818 bytes, avg flow rate 1.00 kbits/s
+Wed Oct 28 12:22:03 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59903 to 104.244.43.7:443; FIN sent; 11 packets, 1679 bytes, avg flow rate 0.93 kbits/s
+Wed Oct 28 12:22:03 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59906 to 193.111.104.10:443; FIN sent; 14 packets, 4693 bytes, avg flow rate 3.36 kbits/s
+Wed Oct 28 12:22:03 2015; TCP; wlan0; 52 bytes; from 104.244.43.7:443 to 192.168.1.147:59904; FIN acknowleged
+Wed Oct 28 12:22:03 2015; TCP; wlan0; 52 bytes; from 104.244.43.7:443 to 192.168.1.147:59903; FIN acknowleged
+Wed Oct 28 12:22:03 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59906; FIN acknowleged
+Wed Oct 28 12:22:06 2015; UDP; wlan0; 52 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:22:06 2015; UDP; wlan0; 60 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:22:07 2015; TCP; wlan0; 56 bytes; from 157.55.235.165:40025 to 192.168.1.147:59725; first packet
+Wed Oct 28 12:22:07 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59725 to 157.55.235.165:40025; first packet
+Wed Oct 28 12:22:08 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59907; FIN sent; 9 packets, 1245 bytes, avg flow rate 0.69 kbits/s
+Wed Oct 28 12:22:08 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59907 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:22:10 2015; UDP; wlan0; 63 bytes; from 192.168.1.147:55577 to 8.8.8.8:53
+Wed Oct 28 12:22:10 2015; UDP; wlan0; 91 bytes; from 8.8.8.8:53 to 192.168.1.147:55577
+Wed Oct 28 12:22:11 2015; UDP; wlan0; 61 bytes; from 192.168.1.147:62397 to 8.8.8.8:53
+Wed Oct 28 12:22:11 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59907 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 1.00 kbits/s
+Wed Oct 28 12:22:11 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59907; FIN acknowleged
+Wed Oct 28 12:22:11 2015; UDP; wlan0; 104 bytes; from 8.8.8.8:53 to 192.168.1.147:62397
+Wed Oct 28 12:22:11 2015; UDP; wlan0; 1378 bytes; from 192.168.1.147:58811 to 216.58.209.133:443
+Wed Oct 28 12:22:11 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59908 to 216.58.209.133:443; first packet (SYN)
+Wed Oct 28 12:22:11 2015; TCP; wlan0; 60 bytes; from 216.58.209.133:443 to 192.168.1.147:59908; first packet (SYN)
+Wed Oct 28 12:22:11 2015; UDP; wlan0; 65 bytes; from 216.58.209.133:443 to 192.168.1.147:58811
+Wed Oct 28 12:22:11 2015; UDP; wlan0; 1378 bytes; from 216.58.209.133:443 to 192.168.1.147:58811
+Wed Oct 28 12:22:11 2015; UDP; wlan0; 1378 bytes; from 192.168.1.147:58811 to 216.58.209.133:443
+Wed Oct 28 12:22:11 2015; UDP; wlan0; 72 bytes; from 192.168.1.147:58811 to 216.58.209.133:443
+Wed Oct 28 12:22:11 2015; UDP; wlan0; 1378 bytes; from 216.58.209.133:443 to 192.168.1.147:58811
+Wed Oct 28 12:22:11 2015; UDP; wlan0; 69 bytes; from 192.168.1.147:58811 to 216.58.209.133:443
+Wed Oct 28 12:22:11 2015; UDP; wlan0; 60 bytes; from 216.58.209.133:443 to 192.168.1.147:58811
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 178 bytes; from 192.168.1.147:3915 to 213.199.179.153:40003
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 141 bytes; from 192.168.1.147:3915 to 84.248.182.106:41677
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 174 bytes; from 192.168.1.147:3915 to 157.55.130.143:40033
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 137 bytes; from 192.168.1.147:3915 to 82.128.254.20:36961
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 172 bytes; from 192.168.1.147:3915 to 157.55.235.157:40015
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 60 bytes; from 192.168.1.147:3915 to 111.221.77.142:40001
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 64 bytes; from 192.168.1.147:3915 to 157.55.56.145:40015
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 71 bytes; from 82.128.254.20:36961 to 192.168.1.147:3915
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 39 bytes; from 192.168.1.147:3915 to 82.128.254.20:36961
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 62 bytes; from 84.248.182.106:41677 to 192.168.1.147:3915
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 49 bytes; from 157.55.235.157:40015 to 192.168.1.147:3915
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 76 bytes; from 82.128.254.20:36961 to 192.168.1.147:3915
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 49 bytes; from 157.55.130.143:40033 to 192.168.1.147:3915
+Wed Oct 28 12:22:12 2015; UDP; wlan0; 48 bytes; from 157.55.56.145:40015 to 192.168.1.147:3915
+Wed Oct 28 12:22:15 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59909 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:22:15 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59909; first packet (SYN)
+Wed Oct 28 12:22:16 2015; UDP; wlan0; 72 bytes; from 192.168.1.147:57621 to 192.168.1.255:57621
+Wed Oct 28 12:22:20 2015; UDP; wlan0; 68 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:22:20 2015; UDP; wlan0; 68 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:22:20 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59909; FIN sent; 9 packets, 1245 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:22:20 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59909 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:22:22 2015; UDP; wlan0; 178 bytes; from 192.168.1.147:3915 to 213.199.179.153:40003
+Wed Oct 28 12:22:22 2015; UDP; wlan0; 60 bytes; from 192.168.1.147:3915 to 64.4.23.142:40001
+Wed Oct 28 12:22:22 2015; UDP; wlan0; 49 bytes; from 213.199.179.153:40003 to 192.168.1.147:3915
+Wed Oct 28 12:22:22 2015; UDP; wlan0; 880 bytes; from 64.4.23.142:40001 to 192.168.1.147:3915
+Wed Oct 28 12:22:22 2015; UDP; wlan0; 171 bytes; from 192.168.1.147:3915 to 157.55.130.158:40022
+Wed Oct 28 12:22:22 2015; UDP; wlan0; 172 bytes; from 192.168.1.147:3915 to 157.56.52.13:40032
+Wed Oct 28 12:22:22 2015; IGMP; wlan0; 32 bytes; from 0.0.0.0 to 224.0.0.1
+Wed Oct 28 12:22:22 2015; UDP; wlan0; 49 bytes; from 157.55.130.158:40022 to 192.168.1.147:3915
+Wed Oct 28 12:22:22 2015; UDP; wlan0; 49 bytes; from 157.56.52.13:40032 to 192.168.1.147:3915
+Wed Oct 28 12:22:23 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59909 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 2.00 kbits/s
+Wed Oct 28 12:22:23 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59910 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:22:23 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59909; FIN acknowleged
+Wed Oct 28 12:22:23 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59910; first packet (SYN)
+Wed Oct 28 12:22:29 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59910; FIN sent; 11 packets, 1998 bytes, avg flow rate 2.50 kbits/s
+Wed Oct 28 12:22:29 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59910 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:22:29 2015; IGMP; wlan0; 32 bytes; from 192.168.1.147 to 224.0.0.251
+Wed Oct 28 12:22:30 2015; TCP; wlan0; 89 bytes; from 192.168.1.147:59745 to 130.231.61.23:993; first packet
+Wed Oct 28 12:22:30 2015; TCP; wlan0; 52 bytes; from 130.231.61.23:993 to 192.168.1.147:59745; first packet
+Wed Oct 28 12:22:31 2015; TCP; wlan0; 89 bytes; from 192.168.1.147:59767 to 130.231.61.23:993; first packet
+Wed Oct 28 12:22:31 2015; TCP; wlan0; 89 bytes; from 192.168.1.147:59761 to 130.231.61.23:993; first packet
+Wed Oct 28 12:22:31 2015; TCP; wlan0; 52 bytes; from 130.231.61.23:993 to 192.168.1.147:59767; first packet
+Wed Oct 28 12:22:31 2015; TCP; wlan0; 52 bytes; from 130.231.61.23:993 to 192.168.1.147:59761; first packet
+Wed Oct 28 12:22:32 2015; UDP; wlan0; 70 bytes; from 192.168.1.147:42005 to 8.8.8.8:53
+Wed Oct 28 12:22:32 2015; UDP; wlan0; 370 bytes; from 8.8.8.8:53 to 192.168.1.147:42005
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59911 to 62.78.98.251:80; first packet (SYN)
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59912 to 62.78.98.251:80; first packet (SYN)
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59913 to 62.78.98.251:80; first packet (SYN)
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59914 to 62.78.98.251:80; first packet (SYN)
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 60 bytes; from 62.78.98.251:80 to 192.168.1.147:59912; first packet (SYN)
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 60 bytes; from 62.78.98.251:80 to 192.168.1.147:59913; first packet (SYN)
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 60 bytes; from 62.78.98.251:80 to 192.168.1.147:59914; first packet (SYN)
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59915 to 62.78.98.251:80; first packet (SYN)
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 60 bytes; from 62.78.98.251:80 to 192.168.1.147:59915; first packet (SYN)
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 89 bytes; from 192.168.1.147:59754 to 130.231.61.23:993; first packet
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 60 bytes; from 62.78.98.251:80 to 192.168.1.147:59911; first packet (SYN)
+Wed Oct 28 12:22:32 2015; TCP; wlan0; 52 bytes; from 130.231.61.23:993 to 192.168.1.147:59754; first packet
+Wed Oct 28 12:22:32 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 255.255.255.255:17500
+Wed Oct 28 12:22:32 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 192.168.1.255:17500
+Wed Oct 28 12:22:35 2015; UDP; wlan0; 52 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:22:35 2015; UDP; wlan0; 60 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:22:36 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59910 to 193.111.104.10:443; FIN sent; 12 packets, 3384 bytes, avg flow rate 2.08 kbits/s
+Wed Oct 28 12:22:36 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59916 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:22:36 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59910; first packet
+Wed Oct 28 12:22:36 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59916; first packet (SYN)
+Wed Oct 28 12:22:39 2015; TCP; wlan0; 52 bytes; from 62.78.98.222:443 to 192.168.1.147:59873; FIN sent; 4 packets, 271 bytes, avg flow rate 0.03 kbits/s
+Wed Oct 28 12:22:39 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59873 to 62.78.98.222:443; FIN acknowleged
+Wed Oct 28 12:22:39 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59873 to 62.78.98.222:443; FIN sent; 5 packets, 236 bytes, avg flow rate 0.02 kbits/s
+Wed Oct 28 12:22:39 2015; TCP; wlan0; 52 bytes; from 62.78.98.222:443 to 192.168.1.147:59873; FIN acknowleged
+Wed Oct 28 12:22:41 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59916; FIN sent; 8 packets, 1193 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:22:41 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59916 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:22:43 2015; UDP; wlan0; 1378 bytes; from 192.168.1.147:64925 to 216.58.209.129:443
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59916 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 2.29 kbits/s
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59915 to 62.78.98.251:80; FIN sent; 3 packets, 168 bytes, avg flow rate 0.09 kbits/s
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59911 to 62.78.98.251:80; FIN sent; 3 packets, 168 bytes, avg flow rate 0.09 kbits/s
+Wed Oct 28 12:22:43 2015; UDP; wlan0; 61 bytes; from 192.168.1.147:11919 to 8.8.8.8:53
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59917 to 62.78.98.217:443; first packet (SYN)
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 52 bytes; from 62.78.98.251:80 to 192.168.1.147:59911; FIN acknowleged
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 52 bytes; from 62.78.98.251:80 to 192.168.1.147:59911; FIN sent; 2 packets, 112 bytes, avg flow rate 0.00 kbits/s
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 52 bytes; from 62.78.98.251:80 to 192.168.1.147:59915; FIN acknowleged
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 52 bytes; from 62.78.98.251:80 to 192.168.1.147:59915; FIN sent; 2 packets, 112 bytes, avg flow rate 0.00 kbits/s
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59911 to 62.78.98.251:80; FIN acknowleged
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 60 bytes; from 62.78.98.217:443 to 192.168.1.147:59917; first packet (SYN)
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59915 to 62.78.98.251:80; FIN acknowleged
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59916; FIN acknowleged
+Wed Oct 28 12:22:43 2015; UDP; wlan0; 1378 bytes; from 216.58.209.129:443 to 192.168.1.147:64925
+Wed Oct 28 12:22:43 2015; UDP; wlan0; 65 bytes; from 192.168.1.147:64925 to 216.58.209.129:443
+Wed Oct 28 12:22:43 2015; UDP; wlan0; 317 bytes; from 8.8.8.8:53 to 192.168.1.147:11919
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59918 to 62.78.98.241:443; first packet (SYN)
+Wed Oct 28 12:22:43 2015; TCP; wlan0; 60 bytes; from 62.78.98.241:443 to 192.168.1.147:59918; first packet (SYN)
+Wed Oct 28 12:22:44 2015; UDP; wlan0; 60 bytes; from 192.168.1.147:3915 to 65.55.223.38:40025
+Wed Oct 28 12:22:44 2015; UDP; wlan0; 48 bytes; from 65.55.223.38:40025 to 192.168.1.147:3915
+Wed Oct 28 12:22:45 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59919 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:22:45 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59919; first packet (SYN)
+Wed Oct 28 12:22:46 2015; UDP; wlan0; 72 bytes; from 192.168.1.147:57621 to 192.168.1.255:57621
+Wed Oct 28 12:22:48 2015; UDP; wlan0; 68 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:22:48 2015; UDP; wlan0; 68 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:22:50 2015; UDP; wlan0; 61 bytes; from 192.168.1.147:37612 to 8.8.8.8:53
+Wed Oct 28 12:22:50 2015; UDP; wlan0; 61 bytes; from 192.168.1.147:57796 to 8.8.8.8:53
+Wed Oct 28 12:22:50 2015; UDP; wlan0; 338 bytes; from 8.8.8.8:53 to 192.168.1.147:37612
+Wed Oct 28 12:22:50 2015; UDP; wlan0; 317 bytes; from 8.8.8.8:53 to 192.168.1.147:57796
+Wed Oct 28 12:22:50 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59919; FIN sent; 10 packets, 1356 bytes, avg flow rate 2.00 kbits/s
+Wed Oct 28 12:22:50 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59919 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 62 bytes; from 192.168.1.147:54577 to 8.8.8.8:53
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 78 bytes; from 8.8.8.8:53 to 192.168.1.147:54577
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59920 to 188.40.166.25:80; first packet (SYN)
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 60 bytes; from 188.40.166.25:80 to 192.168.1.147:59920; first packet (SYN)
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 69 bytes; from 192.168.1.147:22900 to 8.8.8.8:53
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 60 bytes; from 192.168.1.147:10126 to 8.8.8.8:53
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 344 bytes; from 8.8.8.8:53 to 192.168.1.147:22900
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59921 to 188.40.166.25:80; first packet (SYN)
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59922 to 62.78.98.242:443; first packet (SYN)
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59923 to 188.40.166.25:80; first packet (SYN)
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59924 to 188.40.166.25:80; first packet (SYN)
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59925 to 188.40.166.25:80; first packet (SYN)
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 316 bytes; from 8.8.8.8:53 to 192.168.1.147:10126
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 60 bytes; from 62.78.98.242:443 to 192.168.1.147:59922; first packet (SYN)
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 60 bytes; from 188.40.166.25:80 to 192.168.1.147:59923; first packet (SYN)
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 60 bytes; from 188.40.166.25:80 to 192.168.1.147:59924; first packet (SYN)
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 60 bytes; from 188.40.166.25:80 to 192.168.1.147:59921; first packet (SYN)
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 60 bytes; from 188.40.166.25:80 to 192.168.1.147:59925; first packet (SYN)
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 65 bytes; from 192.168.1.147:38521 to 8.8.8.8:53
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 58 bytes; from 192.168.1.147:50083 to 8.8.8.8:53
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 59 bytes; from 192.168.1.147:34985 to 8.8.8.8:53
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59926 to 188.40.166.25:80; first packet (SYN)
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 75 bytes; from 8.8.8.8:53 to 192.168.1.147:34985
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 74 bytes; from 8.8.8.8:53 to 192.168.1.147:50083
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 60 bytes; from 192.168.1.147:62222 to 8.8.8.8:53
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 62 bytes; from 192.168.1.147:18019 to 8.8.8.8:53
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 97 bytes; from 8.8.8.8:53 to 192.168.1.147:38521
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 62 bytes; from 192.168.1.147:33011 to 8.8.8.8:53
+Wed Oct 28 12:22:54 2015; TCP; wlan0; 60 bytes; from 188.40.166.25:80 to 192.168.1.147:59926; first packet (SYN)
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 78 bytes; from 8.8.8.8:53 to 192.168.1.147:18019
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 57 bytes; from 192.168.1.147:45170 to 8.8.8.8:53
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 92 bytes; from 8.8.8.8:53 to 192.168.1.147:62222
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 78 bytes; from 8.8.8.8:53 to 192.168.1.147:33011
+Wed Oct 28 12:22:54 2015; UDP; wlan0; 73 bytes; from 8.8.8.8:53 to 192.168.1.147:45170
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59918 to 62.78.98.241:443; FIN sent; 9 packets, 986 bytes, avg flow rate 0.58 kbits/s
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59917 to 62.78.98.217:443; FIN sent; 9 packets, 986 bytes, avg flow rate 0.58 kbits/s
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59919 to 193.111.104.10:443; FIN sent; 11 packets, 2104 bytes, avg flow rate 1.60 kbits/s
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59927 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 52 bytes; from 62.78.98.217:443 to 192.168.1.147:59917; FIN acknowleged
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 52 bytes; from 62.78.98.217:443 to 192.168.1.147:59917; FIN sent; 6 packets, 1312 bytes, avg flow rate 0.83 kbits/s
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 52 bytes; from 62.78.98.241:443 to 192.168.1.147:59918; FIN acknowleged
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 52 bytes; from 62.78.98.241:443 to 192.168.1.147:59918; FIN sent; 9 packets, 5400 bytes, avg flow rate 3.58 kbits/s
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59917 to 62.78.98.217:443; FIN acknowleged
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59918 to 62.78.98.241:443; FIN acknowleged
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59919; first packet
+Wed Oct 28 12:22:55 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59927; first packet (SYN)
+Wed Oct 28 12:22:56 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59924; FIN sent; 4 packets, 793 bytes, avg flow rate 3.00 kbits/s
+Wed Oct 28 12:22:56 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59924 to 188.40.166.25:80; FIN acknowleged
+Wed Oct 28 12:22:56 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59926; FIN sent; 4 packets, 793 bytes, avg flow rate 3.00 kbits/s
+Wed Oct 28 12:22:56 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59926 to 188.40.166.25:80; FIN acknowleged
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59925; FIN sent; 6 packets, 2051 bytes, avg flow rate 5.33 kbits/s
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59925 to 188.40.166.25:80; FIN acknowleged
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59923; FIN sent; 8 packets, 5908 bytes, avg flow rate 15.67 kbits/s
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59923 to 188.40.166.25:80; FIN acknowleged
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59921; FIN sent; 6 packets, 2051 bytes, avg flow rate 5.33 kbits/s
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59921 to 188.40.166.25:80; FIN acknowleged
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59920; FIN sent; 16 packets, 14834 bytes, avg flow rate 39.33 kbits/s
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59920 to 188.40.166.25:80; FIN acknowleged
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59925 to 188.40.166.25:80; FIN sent; 10 packets, 2152 bytes, avg flow rate 5.67 kbits/s
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59923 to 188.40.166.25:80; FIN sent; 11 packets, 2134 bytes, avg flow rate 5.67 kbits/s
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59921 to 188.40.166.25:80; FIN sent; 10 packets, 2152 bytes, avg flow rate 5.67 kbits/s
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59924 to 188.40.166.25:80; FIN sent; 6 packets, 864 bytes, avg flow rate 2.00 kbits/s
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59920 to 188.40.166.25:80; FIN sent; 19 packets, 3673 bytes, avg flow rate 9.67 kbits/s
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59926 to 188.40.166.25:80; FIN sent; 6 packets, 864 bytes, avg flow rate 2.00 kbits/s
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59923; FIN acknowleged
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59924; FIN acknowleged
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59926; FIN acknowleged
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59925; FIN acknowleged
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59921; FIN acknowleged
+Wed Oct 28 12:22:57 2015; TCP; wlan0; 52 bytes; from 188.40.166.25:80 to 192.168.1.147:59920; FIN acknowleged
+Wed Oct 28 12:23:02 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59927; FIN sent; 11 packets, 1998 bytes, avg flow rate 2.14 kbits/s
+Wed Oct 28 12:23:02 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59927 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:23:02 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 255.255.255.255:17500
+Wed Oct 28 12:23:02 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 192.168.1.255:17500
+Wed Oct 28 12:23:03 2015; UDP; wlan0; 52 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:23:03 2015; UDP; wlan0; 60 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:23:05 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59927 to 193.111.104.10:443; FIN sent; 12 packets, 3384 bytes, avg flow rate 2.70 kbits/s
+Wed Oct 28 12:23:05 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59928 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:23:05 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59927; FIN acknowleged
+Wed Oct 28 12:23:05 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59928; first packet (SYN)
+Wed Oct 28 12:23:10 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59928; FIN sent; 7 packets, 1141 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:23:10 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59928 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:23:16 2015; UDP; wlan0; 72 bytes; from 192.168.1.147:57621 to 192.168.1.255:57621
+Wed Oct 28 12:23:18 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59928 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 1.23 kbits/s
+Wed Oct 28 12:23:18 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59929 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:23:18 2015; UDP; wlan0; 68 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:23:18 2015; UDP; wlan0; 68 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:23:18 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59929; first packet (SYN)
+Wed Oct 28 12:23:18 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59928; FIN acknowleged
+Wed Oct 28 12:23:21 2015; TCP; wlan0; 52 bytes; from 62.78.98.221:443 to 192.168.1.147:59887; FIN sent; 5 packets, 323 bytes, avg flow rate 0.02 kbits/s
+Wed Oct 28 12:23:21 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59887 to 62.78.98.221:443; FIN acknowleged
+Wed Oct 28 12:23:21 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59887 to 62.78.98.221:443; FIN sent; 6 packets, 276 bytes, avg flow rate 0.02 kbits/s
+Wed Oct 28 12:23:21 2015; TCP; wlan0; 52 bytes; from 62.78.98.221:443 to 192.168.1.147:59887; FIN acknowleged
+Wed Oct 28 12:23:23 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59929; FIN sent; 8 packets, 1194 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:23:23 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59929 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:23:24 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59929 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 2.67 kbits/s
+Wed Oct 28 12:23:24 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59930 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:23:24 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59929; FIN acknowleged
+Wed Oct 28 12:23:24 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59930; first packet (SYN)
+Wed Oct 28 12:23:29 2015; UDP; wlan0; 61 bytes; from 192.168.1.147:16214 to 8.8.8.8:53
+Wed Oct 28 12:23:29 2015; UDP; wlan0; 338 bytes; from 8.8.8.8:53 to 192.168.1.147:16214
+Wed Oct 28 12:23:29 2015; TCP; wlan0; 98 bytes; from 199.16.156.6:443 to 192.168.1.147:59602; first packet
+Wed Oct 28 12:23:29 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59602 to 199.16.156.6:443; Connection reset; 1 packets, 40 bytes, avg flow rate 0.00 kbits/s; opposite direction 1 packets, 98 bytes; avg flow rate 0.00 kbits/s
+Wed Oct 28 12:23:31 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59930; FIN sent; 9 packets, 1895 bytes, avg flow rate 2.14 kbits/s
+Wed Oct 28 12:23:31 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59930 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:23:32 2015; TCP; wlan0; 52 bytes; from 62.78.98.251:80 to 192.168.1.147:59914; FIN sent; 5 packets, 654 bytes, avg flow rate 0.08 kbits/s
+Wed Oct 28 12:23:32 2015; TCP; wlan0; 52 bytes; from 62.78.98.251:80 to 192.168.1.147:59912; FIN sent; 5 packets, 641 bytes, avg flow rate 0.08 kbits/s
+Wed Oct 28 12:23:32 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59914 to 62.78.98.251:80; FIN acknowleged
+Wed Oct 28 12:23:32 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59912 to 62.78.98.251:80; FIN acknowleged
+Wed Oct 28 12:23:32 2015; TCP; wlan0; 52 bytes; from 62.78.98.251:80 to 192.168.1.147:59913; FIN sent; 6 packets, 1092 bytes, avg flow rate 0.13 kbits/s
+Wed Oct 28 12:23:32 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59913 to 62.78.98.251:80; FIN acknowleged
+Wed Oct 28 12:23:32 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 255.255.255.255:17500
+Wed Oct 28 12:23:32 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 192.168.1.255:17500
+Wed Oct 28 12:23:33 2015; UDP; wlan0; 52 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:23:33 2015; UDP; wlan0; 60 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:23:35 2015; UDP; wlan0; 1378 bytes; from 192.168.1.147:55483 to 216.58.209.129:443
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59930 to 193.111.104.10:443; FIN sent; 12 packets, 3384 bytes, avg flow rate 2.45 kbits/s
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59914 to 62.78.98.251:80; FIN sent; 7 packets, 1227 bytes, avg flow rate 0.14 kbits/s
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59912 to 62.78.98.251:80; FIN sent; 7 packets, 1208 bytes, avg flow rate 0.14 kbits/s
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59913 to 62.78.98.251:80; FIN sent; 9 packets, 2189 bytes, avg flow rate 0.27 kbits/s
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59931 to 62.78.98.241:443; first packet (SYN)
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59932 to 62.78.98.217:443; first packet (SYN)
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 52 bytes; from 62.78.98.251:80 to 192.168.1.147:59914; FIN acknowleged
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 52 bytes; from 62.78.98.251:80 to 192.168.1.147:59912; FIN acknowleged
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 52 bytes; from 62.78.98.251:80 to 192.168.1.147:59913; FIN acknowleged
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 60 bytes; from 62.78.98.241:443 to 192.168.1.147:59931; first packet (SYN)
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 60 bytes; from 62.78.98.217:443 to 192.168.1.147:59932; first packet (SYN)
+Wed Oct 28 12:23:35 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59930; FIN acknowleged
+Wed Oct 28 12:23:35 2015; UDP; wlan0; 65 bytes; from 216.58.209.129:443 to 192.168.1.147:55483
+Wed Oct 28 12:23:35 2015; UDP; wlan0; 1378 bytes; from 216.58.209.129:443 to 192.168.1.147:55483
+Wed Oct 28 12:23:35 2015; UDP; wlan0; 1378 bytes; from 192.168.1.147:55483 to 216.58.209.129:443
+Wed Oct 28 12:23:35 2015; UDP; wlan0; 72 bytes; from 192.168.1.147:55483 to 216.58.209.129:443
+Wed Oct 28 12:23:35 2015; UDP; wlan0; 1378 bytes; from 216.58.209.129:443 to 192.168.1.147:55483
+Wed Oct 28 12:23:35 2015; UDP; wlan0; 69 bytes; from 192.168.1.147:55483 to 216.58.209.129:443
+Wed Oct 28 12:23:35 2015; UDP; wlan0; 60 bytes; from 216.58.209.129:443 to 192.168.1.147:55483
+Wed Oct 28 12:23:36 2015; UDP; wlan0; 65 bytes; from 192.168.1.147:3934 to 8.8.8.8:53
+Wed Oct 28 12:23:36 2015; UDP; wlan0; 345 bytes; from 8.8.8.8:53 to 192.168.1.147:3934
+Wed Oct 28 12:23:39 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59933 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:23:39 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59933; first packet (SYN)
+Wed Oct 28 12:23:44 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59933; FIN sent; 8 packets, 1194 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:23:44 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59933 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:23:44 2015; UDP; wlan0; 68 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:23:44 2015; UDP; wlan0; 68 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:23:46 2015; UDP; wlan0; 72 bytes; from 192.168.1.147:57621 to 192.168.1.255:57621
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59874 to 54.209.12.252:443; FIN sent; 4 packets, 172 bytes, avg flow rate 0.01 kbits/s
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59931 to 62.78.98.241:443; FIN sent; 10 packets, 1050 bytes, avg flow rate 0.67 kbits/s
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59932 to 62.78.98.217:443; FIN sent; 10 packets, 1038 bytes, avg flow rate 0.67 kbits/s
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59933 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 2.00 kbits/s
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59934 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 62.78.98.241:443 to 192.168.1.147:59931; FIN acknowleged
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 62.78.98.241:443 to 192.168.1.147:59931; FIN sent; 10 packets, 5454 bytes, avg flow rate 3.58 kbits/s
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 62.78.98.217:443 to 192.168.1.147:59932; FIN acknowleged
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 62.78.98.217:443 to 192.168.1.147:59932; FIN sent; 10 packets, 5454 bytes, avg flow rate 3.58 kbits/s
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59931 to 62.78.98.241:443; FIN acknowleged
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59932 to 62.78.98.217:443; FIN acknowleged
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59933; FIN acknowleged
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59934; first packet (SYN)
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 83 bytes; from 54.209.12.252:443 to 192.168.1.147:59874; FIN acknowleged
+Wed Oct 28 12:23:47 2015; TCP; wlan0; 40 bytes; from 192.168.1.147:59874 to 54.209.12.252:443; Connection reset; 5 packets, 212 bytes, avg flow rate 0.01 kbits/s; opposite direction 4 packets, 239 bytes; avg flow rate 0.01 kbits/s
+Wed Oct 28 12:23:51 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59935 to 62.78.98.241:443; first packet (SYN)
+Wed Oct 28 12:23:51 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59936 to 62.78.98.217:443; first packet (SYN)
+Wed Oct 28 12:23:51 2015; TCP; wlan0; 60 bytes; from 62.78.98.241:443 to 192.168.1.147:59935; first packet (SYN)
+Wed Oct 28 12:23:51 2015; TCP; wlan0; 60 bytes; from 62.78.98.217:443 to 192.168.1.147:59936; first packet (SYN)
+Wed Oct 28 12:23:52 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59934; FIN sent; 9 packets, 1246 bytes, avg flow rate 1.80 kbits/s
+Wed Oct 28 12:23:52 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59934 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:23:55 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59934 to 193.111.104.10:443; FIN sent; 10 packets, 2052 bytes, avg flow rate 2.00 kbits/s
+Wed Oct 28 12:23:55 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59937 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:23:55 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59934; FIN acknowleged
+Wed Oct 28 12:23:55 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59937; first packet (SYN)
+Wed Oct 28 12:23:59 2015; UDP; wlan0; 52 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:23:59 2015; UDP; wlan0; 52 bytes; from 192.168.1.147:62209 to 173.194.71.189:443
+Wed Oct 28 12:24:00 2015; UDP; wlan0; 57 bytes; from 173.194.71.189:443 to 192.168.1.147:62209
+Wed Oct 28 12:24:02 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 255.255.255.255:17500
+Wed Oct 28 12:24:02 2015; UDP; wlan0; 139 bytes; from 192.168.1.147:17500 to 192.168.1.255:17500
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59935 to 62.78.98.241:443; FIN sent; 10 packets, 1050 bytes, avg flow rate 0.67 kbits/s
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59936 to 62.78.98.217:443; FIN sent; 12 packets, 1190 bytes, avg flow rate 0.75 kbits/s
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59938 to 62.78.98.241:443; first packet (SYN)
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59939 to 62.78.98.217:443; first packet (SYN)
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 52 bytes; from 62.78.98.241:443 to 192.168.1.147:59935; FIN acknowleged
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 52 bytes; from 62.78.98.241:443 to 192.168.1.147:59935; FIN sent; 9 packets, 5400 bytes, avg flow rate 3.58 kbits/s
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 52 bytes; from 62.78.98.217:443 to 192.168.1.147:59936; FIN acknowleged
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 52 bytes; from 62.78.98.217:443 to 192.168.1.147:59936; FIN sent; 10 packets, 5452 bytes, avg flow rate 3.58 kbits/s
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 60 bytes; from 62.78.98.241:443 to 192.168.1.147:59938; first packet (SYN)
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59935 to 62.78.98.241:443; FIN acknowleged
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 60 bytes; from 62.78.98.217:443 to 192.168.1.147:59939; first packet (SYN)
+Wed Oct 28 12:24:03 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59936 to 62.78.98.217:443; FIN acknowleged
+Wed Oct 28 12:24:04 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59937; FIN sent; 11 packets, 1998 bytes, avg flow rate 1.67 kbits/s
+Wed Oct 28 12:24:04 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59937 to 193.111.104.10:443; FIN acknowleged
+Wed Oct 28 12:24:06 2015; TCP; wlan0; 52 bytes; from 192.168.1.147:59937 to 193.111.104.10:443; FIN sent; 12 packets, 3384 bytes, avg flow rate 2.45 kbits/s
+Wed Oct 28 12:24:06 2015; TCP; wlan0; 52 bytes; from 193.111.104.10:443 to 192.168.1.147:59937; FIN acknowleged
+Wed Oct 28 12:24:07 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59940 to 193.111.104.10:443; first packet (SYN)
+Wed Oct 28 12:24:07 2015; TCP; wlan0; 60 bytes; from 193.111.104.10:443 to 192.168.1.147:59940; first packet (SYN)
+Wed Oct 28 12:24:08 2015; UDP; wlan0; 58 bytes; from 192.168.1.147:62978 to 8.8.8.8:53
+Wed Oct 28 12:24:08 2015; UDP; wlan0; 74 bytes; from 8.8.8.8:53 to 192.168.1.147:62978
+Wed Oct 28 12:24:09 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59941 to 5.9.100.232:443; first packet (SYN)
+Wed Oct 28 12:24:09 2015; TCP; wlan0; 60 bytes; from 5.9.100.232:443 to 192.168.1.147:59941; first packet (SYN)
+Wed Oct 28 12:24:09 2015; UDP; wlan0; 66 bytes; from 192.168.1.147:29191 to 8.8.8.8:53
+Wed Oct 28 12:24:09 2015; UDP; wlan0; 118 bytes; from 8.8.8.8:53 to 192.168.1.147:29191
+Wed Oct 28 12:24:09 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59942 to 64.233.161.95:443; first packet (SYN)
+Wed Oct 28 12:24:09 2015; UDP; wlan0; 65 bytes; from 192.168.1.147:47373 to 8.8.8.8:53
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 1378 bytes; from 192.168.1.147:52123 to 64.233.161.95:443
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 413 bytes; from 192.168.1.147:52123 to 64.233.161.95:443
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 55 bytes; from 192.168.1.147:5455 to 8.8.8.8:53
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 58 bytes; from 192.168.1.147:39037 to 8.8.8.8:53
+Wed Oct 28 12:24:10 2015; TCP; wlan0; 60 bytes; from 64.233.161.95:443 to 192.168.1.147:59942; first packet (SYN)
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 146 bytes; from 8.8.8.8:53 to 192.168.1.147:47373
+Wed Oct 28 12:24:10 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59943 to 192.0.80.240:443; first packet (SYN)
+Wed Oct 28 12:24:10 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59944 to 192.0.80.240:443; first packet (SYN)
+Wed Oct 28 12:24:10 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59945 to 192.0.80.240:443; first packet (SYN)
+Wed Oct 28 12:24:10 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59946 to 192.0.80.240:443; first packet (SYN)
+Wed Oct 28 12:24:10 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59947 to 192.0.80.240:443; first packet (SYN)
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 1378 bytes; from 64.233.161.95:443 to 192.168.1.147:52123
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 1378 bytes; from 64.233.161.95:443 to 192.168.1.147:52123
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 68 bytes; from 192.168.1.147:52123 to 64.233.161.95:443
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 74 bytes; from 8.8.8.8:53 to 192.168.1.147:39037
+Wed Oct 28 12:24:10 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59948 to 192.0.76.3:443; first packet (SYN)
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 1378 bytes; from 192.168.1.147:52123 to 64.233.161.95:443
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 409 bytes; from 192.168.1.147:52123 to 64.233.161.95:443
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 65 bytes; from 64.233.161.95:443 to 192.168.1.147:52123
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 109 bytes; from 8.8.8.8:53 to 192.168.1.147:5455
+Wed Oct 28 12:24:10 2015; TCP; wlan0; 64 bytes; from 192.168.1.147:59949 to 93.184.220.111:443; first packet (SYN)
+Wed Oct 28 12:24:10 2015; UDP; wlan0; 1378 bytes; from 64.233.161.95:443 to 192.168.1.147:52123
